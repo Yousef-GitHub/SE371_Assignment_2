@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+    <body>
+        <p class="bigParagraph">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+        <p class="bigParagraph">Here are screenshots of the CSS I used for this assignment:</p>
+        <!-- div to center the images -->
+        <div style="text-align: center">
+            <img class="image" alt="CSS1" src="../images/1.png" />
+            <img class="image" alt="CSS1" src="../images/2.png" />
+            <img class="image" alt="CSS1" src="../images/3.png" />
+            <img class="image" alt="CSS1" src="../images/4.png" />
+        </div>
+        <p class="bigParagraph">And here is my CSS code in text:</p>
+        <!-- pre-formatted text -->
+        <pre id="cssCode">
+/* removing the body's marin for more control */
+body{
+    margin: 0px;
+    background-color: #05396b;
+}
+/* creating a fixed top menu bar */
+.menuBar{
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+}
+.menuBar, .dropDownList{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+/* formatting the cells in the menu bar */
+.menuElement, .dropDownElement{
+    text-align: center;
+    line-height: 60px;
+    width: 16.666%;
+    height: 60px;
+    font-size: 35px;
+    float: left;
+    background-color: #5cdb94;
+    cursor: pointer;
+    font-family: 'Montserrat';   
+    color: white;
+}
+/* hiding the drop-down cells when not hovering */
+.dropDownElement{
+    width: 100%;
+    font-size: 20px;
+    display: none;
+}
+/* changing the color for hovered menu cells */
+.menuElement:hover, .dropDownElement:hover{
+    background-color: #05396b;
+}
+/* showing the drop-down list when hovering */
+.menuElement:hover .dropDownElement{
+    display: block;
+}
+/* removing the default hyperlink formatting */
+.menuLink{
+    text-decoration: none;
+    display: block;
+}
+.menuLink:link, .menuLink:visited{
+    color: white;
+}
+/* lowering the content under the menu bar */
+.main{
+    margin-top: 60px;
+}
+/* making a general big paragraph class */
+.bigParagraph{
+    text-align: center;
+    font-size: 55px;
+    line-height: 90px;
+    padding-top: 50px;
+    font-family: 'Montserrat';
+    color: #5cdb94;
+}
+/* making a general medium paragraph class */
+.mediumParagraph{
+    font-size: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: right;
+    width: 570px;
+    font-family: 'Montserrat';
+    color: #5cdb94;
+}
+/* centering the map IFrame */
+#map{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* formatting form elements */
+.field{
+    font-size: 30px;
+    width: 450px;
+}
+/* centering the images */
+.image{
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* positioning the css code text */
+#cssCode{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    font-size: 20px;
+    width: 500px;
+    color: #5cdb94;
+}
+        </pre>
+    </body>
+</html>
